@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "../C PROGRAMMING"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../C++_with_STL"
+		},
+		{
+			"path": "../coding all"
+		},
+		{
+			"path": "../DSA CODE"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stdio.h": "c"
+		}
+	}
+}
