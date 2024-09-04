@@ -16,6 +16,7 @@
 // harry.salary = 8 makes no sense if salary is private
 
 // Nesting of member functions
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -24,17 +25,17 @@ class binary
 {
 private:
     string s;
+    void chk_bin(void);
 
 public:
     void read(void);
     void ones_compliment(void);
     void display(void);
-    void chk_bin(void);
 };
 
 void binary::read(void)
 {
-    cout <<endl<< "Enter a binary number: " << endl;
+    cout << "Enter a binary number" << endl;
     cin >> s;
 }
 
@@ -44,8 +45,7 @@ void binary::chk_bin(void)
     {
         if (s.at(i) != '0' && s.at(i) != '1')
         {
-            cout<<endl<<"Incorrect binary format!!" << endl;
-            cout<<endl;
+            cout << "Incorrect binary format" << endl;
             exit(0);
         }
     }
@@ -53,7 +53,7 @@ void binary::chk_bin(void)
 
 void binary::ones_compliment(void)
 {
-	cout<<endl<<"After ones_complement: ";
+	cout<<"After ones_complement"<<endl;
     chk_bin();
     for (int i = 0; i < s.length(); i++)
     {
@@ -66,13 +66,12 @@ void binary::ones_compliment(void)
             s.at(i) = '0';
         }
     }
-    cout<<endl;
 }
 
 void binary::display(void)
 {
 	if(n)
-    cout<<endl<<"Displaying your binary number: "<<endl;
+    cout<<"Displaying your binary number"<<endl;
     for (int i = 0; i < s.length(); i++)
     {
         cout << s.at(i);
@@ -85,7 +84,7 @@ int main()
 {
     binary b;
     b.read();
-    b.chk_bin();
+   // b.chk_bin();
     b.display();
     b.ones_compliment();
     b.display();
